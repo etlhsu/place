@@ -3,13 +3,19 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+@font-face {
+  font-family: 'Epilogue';
+  src: url('/fonts/Epilogue-Variable.ttf') format('truetype supports variations');
+  src: url('/fonts/Epilogue-Variable.ttf') format('truetype-variations');
+}
+
 body {
-	font-family: Verdana, sans-serif;
+	font-family: "Epilogue", sans-serif;
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
+	max-width: 100ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: theme('colors.pink.100');
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
