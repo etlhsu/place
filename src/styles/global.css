@@ -21,8 +21,16 @@ body {
 	line-height: 1.5;
 	color: #444;
 }
-h1,
-h2,
+h1 {
+ font-size: theme('fontSize.4xl');
+ font-weight: theme('fontWeight.medium');
+ color: theme('colors.pink.900');
+}
+h2 {
+ font-size: theme('fontSize.2xl');
+ font-weight: theme('fontWeight.medium');
+ color: theme('colors.pink.800');
+}
 h3,
 h4,
 h5,
