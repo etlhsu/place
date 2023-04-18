@@ -39,7 +39,7 @@ today's interactions, not invent tomorrow's. The cost of not doing that? A billi
 A key part of a successful surprise is creating unexpected reactions. "I love this" and "I hate this"
 are novel emotions, but people can always find a better "hit" of those emotions somewhere else. On the 
 other hand, where the heck is someone supposed to find a "better surprise?" I bet the title of this 
-article gave you a reaction of surprise. You didn't know whether you liked me or hated me from, but
+article gave you a reaction of surprise. You didn't know whether you liked me or hated me from it, but
 instead chose to read because you saw a couple words that you've never seen put together on a blog.
 
 Going forward, I want to unlock a part of the world that nobody even knows exists (even me). I want
@@ -56,4 +56,4 @@ is fully complete or an investment thesis that soothes Wall Street. I have no cr
 idealize or elevator pitch to glamorize, just the interactions I build and that's it.
 
 We'll see how things go, hopefully I can turn the world people work and live in into the world 
-people play in as well.
+people play in as well...
