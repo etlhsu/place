@@ -44,9 +44,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					)
 				}
 				<hr />
-        <style is:global>
-        </style>
-        <div class="whitespace-pre-line"><slot/></div>
+        <slot/>
 			</article>
 		</main>
 		<Footer />
