@@ -87,17 +87,18 @@ ol {
   list-style: decimal;
   list-style-position: inside;
 }
+li > ol {
+  @apply pl-6;
+}
+
 ul,ol,p {
   white-space: normal;
-}
-table {
-  margin-bottom: 30px;
 }
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 8px;
 }
-article > p {
-  margin-bottom: 30px;
+article > p ~ p, article > table, article > h2, article > ol, article > ul {
+  @apply pb-6;
 }

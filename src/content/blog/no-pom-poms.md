@@ -1,5 +1,5 @@
 ---
-title: "Act 2: World's Greatest Cheerleader"
+title: "World's Greatest Cheerleader"
 description: "Defining a goal to become the world's greatest cheerleader without pom-poms"
 pubDate: "April 16 2023"
 ---
@@ -14,7 +14,8 @@ build? Well, an important principle in my life is that I'm extremely anti-compet
 So I want to let the crypto techies and AI guys do their thing. But what if I could make
 the environment they operate in 10% better? Well that's the mantra of every B2B SaaS company
 on the planet. But I don't even want to compete with them. What if I could make the operating
-environment of the world 10% better in such a way that no one even wants to compete with me?
+environment of the world 10% better? Well surely making interactions more encouraging, exciting
+and happier can achieve just that...
 
 If history has taught me anything, it is that creating things that attempt to control happiness and
 the magic in people's lives usually leads to terrible outcomes (ironically, outcomes so bad that they
@@ -22,10 +23,10 @@ otherwise would not have been found). Good or bad, messing around with the sudos
 makes people who they are is a hobby for the insane (of all kinds). All happiness 
 things/efforts/forces fall apart in one of two ways:
 
-  1. When a force for happiness becomes too tangible, people develop resistances for it and there 
-  emerge opposing forces to take it down.
-  2. When a force for happiness becomes too spread out, momentum for it becomes lost and the 
-  original spirit behind it becomes lost.
+1. When a force for happiness becomes too tangible, people develop resistances for it and there 
+emerge opposing forces to take it down.
+2. When a force for happiness becomes too spread out, momentum for it fades away and the 
+original spirit behind it becomes lost.
 
 Of course, if something has a way in, it will always have a way out. However, I think happiness
 could be better pegged to things in our lives that are a lot more durable. My general observation
@@ -45,9 +46,6 @@ instead chose to read because you saw a couple words that you've never seen put 
 Going forward, I want to unlock a part of the world that nobody even knows exists (even me). I want
 to be a counterweight against all of the people that profiteer from build experiences that 
 depend on people staying the same. 
-
-If that's you, I'm sorry :( But so much is yet to be experienced if the value proposition of 
-encouragement is realized and celebrated.
 
 Part of what makes my mission a bit strange is that you can't quite grasp all of what I am saying. After
 all, I did admit if I fully knew what I was doing, I would certainly be opposed by something and 
