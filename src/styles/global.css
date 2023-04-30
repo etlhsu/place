@@ -12,7 +12,7 @@
 body {
 	font-family: "Epilogue", sans-serif;
 	margin: auto;
-	padding: 20px;
+	padding: theme('padding.5');
 	max-width: 100ch;
 	text-align: left;
 	background-color: theme('colors.pink.100');

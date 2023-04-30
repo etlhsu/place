@@ -56,3 +56,5 @@ a question:
 
 Would you rather be traveler who walks the path of life finding new places or just someone who
 lives at a stop along the way?
+
+_Indeed a tangent_

@@ -7,12 +7,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!DOCTYPE html>
 <html lang="en">
+	<body style="margin: 0; max-width: 100%">
+  <div class="xl:flex flex-wrap space-x-7 max-w-full">
+    <div class='xl:flex-col flex items-center flex-1 max-xl:overflow-x-auto'>
+    <iframe class="rotate-12 mt-6 mb-8 max-xl:ml-1 max-xl:mr-5" style="border-radius:20px"; src="https://open.spotify.com/embed/track/5e7gWJLugowRo3gAVBn99B?utm_source=generator" width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class='w-5 h-5' />
+    <iframe class="-rotate-12 mt-8 mb-12 max-xl:ml-5 max-xl:mr-10" width="250" height="140" src="https://www.youtube-nocookie.com/embed/SCbmAVMMRek?start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="border-2 border-red-400 rotate-6 mt-8 mb-12 max-xl:ml-5 max-xl:mr-5" width="250" height="140" src="https://ethan.how/blog" title="Ethan's Recursive Place"></iframe>
+    </div>
+  <div class="flex-col">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
 		<Header/>
-		<main class="flex-col space-y-9">
+		<main class="flex-col space-y-9" style='max-width: 95ch'>
       <p> Hi, I'm glad you made it here! Here's we go...
           <br><br>
 
@@ -40,6 +48,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           I'll basically do anything just to make exploring the unknowns in life a bit more interesting :)
       </p>
 		</main>
+  </div>
+    <div class='flex-1'/>
+    </div>
 		<Footer />
 	</body>
 </html>
