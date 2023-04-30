@@ -64,3 +64,4 @@ don't need one in the first place? Software that is used to create experiences w
 second fiddle to software that **is** the experience. It may sound simple, but can the world fully
 depend on toys that amplify who we are instead of encouraging who we want to be?
 
+_A bit unfinished..._
