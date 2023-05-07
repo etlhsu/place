@@ -4,16 +4,16 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<h2 class="m-0 pb-3">
-	  {SITE_TITLE}
-	</h2>
+  <div class="flex flex-row items-center pb-1">
+	<h2 class="m-0 pr-5"> <a style="inherit" class="text-pink-800" href="/"> {SITE_TITLE} </a> </h2>
 	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
+    <HeaderLink href="/about">About</HeaderLink>
+		<HeaderLink href="/gptee">EthanGPT</HeaderLink>
 		<HeaderLink href="https://resume.ethan.how">Resume</HeaderLink>
 		<HeaderLink href="https://linkedin.com/in/etlhsu" target="_blank">LinkedIn</HeaderLink>
 	</nav>
+  </div>
 </header>
 <style>
 	header {
