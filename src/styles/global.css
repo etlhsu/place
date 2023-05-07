@@ -31,7 +31,12 @@ h2 {
  font-weight: theme('fontWeight.medium');
  color: theme('colors.pink.800');
 }
-h3,
+h3 {
+ font-size: theme('fontSize.lg');
+ font-weight: theme('fontWeight.semibold');
+ color: theme('colors.pink.500');
+}
+
 h4,
 h5,
 h6,
@@ -100,5 +105,5 @@ table, th, td {
   padding: 8px;
 }
 article > p ~ p, article > table, article > h2, article > ol, article > ul {
-  @apply pb-6;
+  @apply pb-5;
 }
