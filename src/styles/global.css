@@ -15,26 +15,26 @@ body {
 	padding: theme('padding.5');
 	max-width: 100ch;
 	text-align: left;
-	background-color: theme('colors.pink.100');
+	background-color: var(--body-background-color);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: var(--body-color); 
 }
 h1 {
  font-size: theme('fontSize.4xl');
  font-weight: theme('fontWeight.medium');
- color: theme('colors.pink.900');
+ color: var(--h1-color);
 }
 h2 {
  font-size: theme('fontSize.2xl');
  font-weight: theme('fontWeight.medium');
- color: theme('colors.pink.800');
+ color: var(--h2-color);
 }
 h3 {
  font-size: theme('fontSize.lg');
  font-weight: theme('fontWeight.semibold');
- color: theme('colors.pink.500');
+ color: var(--h3-color);
 }
 
 h4,
@@ -42,10 +42,10 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: var(--color-b);
 }
 a {
-	color: #3273dc;
+	color: var(--color-a);
 }
 nav a {
 	margin-right: 10px;
@@ -69,7 +69,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: #f2f2f2;
+	background-color: var(--code-bg);
 }
 pre {
 	padding: 1rem;
@@ -78,7 +78,7 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border: 4px dashed theme('colors.pink.500');
+	border: 4px dashed var(--blockquote-border);
 	padding: theme('padding.3');
 	font-style: italic;
 }
@@ -98,10 +98,39 @@ ul,ol,p {
   white-space: normal;
 }
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid var(--table-border);
   border-collapse: collapse;
   padding: 8px;
 }
 article > p ~ p, article > table, article > h2, article > ol, article > ul {
   @apply pb-5;
+}
+
+:root {
+  --body-color: #444;
+  --body-background-color: theme('colors.pink.100');
+  --h1-color: theme('colors.pink.900');
+  --h2-color: theme('colors.pink.800');
+  --h3-color: theme('colors.pink.500');
+  --color-b: theme('colors.slate.800');
+  --color-a: #3273dc;
+  --code-bg: #f2f2f2;
+  --blockquote-border: theme('colors.pink.500');
+  --table-border: black;
+  --copyright-color: theme('colors.pink.200');
+  --copyright-color: theme('colors.pink.300');
+}
+
+[data-theme="dark"] {
+  --body-color: theme('colors.slate.400');
+  --body-background-color: theme('colors.pink.950');
+  --h1-color: theme('colors.pink.600');
+  --h2-color: theme('colors.pink.800');
+  --h3-color: theme('colors.pink.500');
+  --color-b: theme('colors.slate.300');
+  --color-a: theme('colors.blue.500');
+  --code-bg: #f2f2f2;
+  --blockquote-border: theme('colors.pink.700');
+  --table-border: white;
+  --copyright-color: theme('colors.pink.900');
 }
