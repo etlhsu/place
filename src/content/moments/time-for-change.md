@@ -69,7 +69,7 @@ less than 1 thing. Always stay at one.
 I realized that throughout my journey, I consistently failed to give myself a starting point in life.
 I always gave myself a destination like "acquire x to achieve y and influence z". But I never
 positioned myself for an adventure that demanded all of me. Refining a single "something" to do
-gives an immediate starting point so that I can overcome my skeptical nature, but still gives me
+gives me an immediate starting point so I can overcome my skeptical nature, but still gives me
 the peace of mind that I care about what I am doing because I can always switch it out with
 something else.
 
