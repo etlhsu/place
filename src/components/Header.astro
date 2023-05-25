@@ -5,17 +5,17 @@ import { SITE_TITLE } from '../consts';
 
 <header>
   <div class="flex flex-row items-center pb-1 max-w-full">
-	<h2 class="m-0 pr-5"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
-  <div class="flex flex-row grow items-center">
+	<h2 class="pr-5"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
+  <div class="flex-1 flex-row">
 	<nav>
 		<HeaderLink href="/moments">Moments</HeaderLink>
     <HeaderLink href="/about">About</HeaderLink>
 		<HeaderLink href="/gptee">EthanGPT</HeaderLink>
 	</nav>
   </div>
-    <picture id="switcher-picture" class="self-end">
+    <picture id="switcher-picture">
     <source id="switcher-source" type="image/svg" srcset="/moon.svg">
-    <img id="switcher" class="w-8 h-8">
+    <img id="switcher" style="filter: drop-shadow(1px 1px 1px #999999);" class="w-8 h-8">
     </picture>
   </div>
 </header>
@@ -47,7 +47,6 @@ import { SITE_TITLE } from '../consts';
 
   function onSwitcherMouseOver() {
     var theme = "light";
-    var theme = "light";
     if(localStorage.getItem("theme") == "dark") theme = "dark";
 
     var switcher = document.getElementById("switcher");
@@ -65,10 +64,8 @@ import { SITE_TITLE } from '../consts';
     if(localStorage.getItem("theme") == "dark") theme = "dark";
 
     var switcher = document.getElementById("switcher");
-    var switcherSource = document.getElementById("switcher-source");
     var animatedSrc = "/moon.svg";
     if(theme == "dark") animatedSrc = "/sun.svg"
-    switcherSource.srcset = animatedSrc;
     switcher.src = animatedSrc;
     console.log("switch out");
   }
