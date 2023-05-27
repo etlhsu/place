@@ -42,8 +42,8 @@ import { SITE_TITLE } from '../consts';
     if(theme == "dark") graphic = "/sun.svg";
     switcher.src = graphic;
 
-  var switcher = document.getElementById("switcher");
-  localStorage.setItem("theme", theme);
+    var switcher = document.getElementById("switcher");
+    localStorage.setItem("theme", theme);
 
   function onSwitcherMouseOver() {
     var theme = "light";
@@ -55,8 +55,6 @@ import { SITE_TITLE } from '../consts';
     if(theme == "dark") animatedSrc = "/sun.webp"
     switcherSource.srcset = animatedSrc;
     switcher.src = animatedSrc;
-    console.log("switch over");
-
   }
 
   function onSwitcherMouseOut() {
@@ -67,7 +65,6 @@ import { SITE_TITLE } from '../consts';
     var animatedSrc = "/moon.svg";
     if(theme == "dark") animatedSrc = "/sun.svg"
     switcher.src = animatedSrc;
-    console.log("switch out");
   }
 
   function onClick() {
@@ -76,10 +73,22 @@ import { SITE_TITLE } from '../consts';
 
     var newTheme = "dark";
     if(theme == "dark") newTheme = "light";
+
+    var switcher = document.getElementById("switcher");
+    var switcherSource = document.getElementById("switcher-source");
+    var src = "/moon.webp";
+    if (switcher.src.endsWith("moon.webp")) {
+      src = "/sun.webp";
+    } else if (switcher.src.endsWith("moon.svg")) {
+      src = "/sun.svg";
+    } else if (switcher.src.endsWith("sun.svg")) {
+      src = "/moon.svg";
+    }
+    switcherSource.srcset = src;
+    switcher.src = src;
+
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
-
-    onSwitcherMouseOver();
   }
   
   switcherPicture.addEventListener("mouseover", onSwitcherMouseOver);

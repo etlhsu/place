@@ -124,9 +124,9 @@ article > p ~ p, article > table, article > h2, article > ol, article > ul {
 [data-theme="dark"] {
   --body-color: theme('colors.slate.400');
   --body-background-color: theme('colors.pink.950');
-  --h1-color: theme('colors.pink.600');
-  --h2-color: theme('colors.pink.800');
-  --h3-color: theme('colors.pink.500');
+  --h1-color: theme('colors.pink.700');
+  --h2-color: theme('colors.pink.600');
+  --h3-color: theme('colors.pink.400');
   --color-b: theme('colors.slate.300');
   --color-a: theme('colors.blue.500');
   --code-bg: #f2f2f2;
