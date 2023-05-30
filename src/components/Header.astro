@@ -8,6 +8,7 @@ import { SITE_TITLE } from '../consts';
 	<h2 class="pr-5"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
   <div class="flex-1 flex-row">
 	<nav>
+		<HeaderLink href="/okrs">OKRs</HeaderLink>
 		<HeaderLink href="/moments">Moments</HeaderLink>
     <HeaderLink href="/about">About</HeaderLink>
 		<HeaderLink href="/gptee">EthanGPT</HeaderLink>
@@ -27,7 +28,7 @@ import { SITE_TITLE } from '../consts';
 		margin: 0.5em 0;
 	}
 </style>
-<script>
+<script is:inline>
     var theme = localStorage.getItem("theme"); 
     if(theme === null) {
       theme = "light"

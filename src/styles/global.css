@@ -79,7 +79,7 @@ pre > code {
 }
 blockquote {
 	border: 4px dashed var(--blockquote-border);
-	padding: theme('padding.3');
+	padding: theme('padding.4');
 	font-style: italic;
 }
 ul {
@@ -102,35 +102,41 @@ table, th, td {
   border-collapse: collapse;
   padding: 8px;
 }
-article > p ~ p, article > table, article > h2, article > ol, article > ul {
-  @apply pb-5;
+article {
+  @apply space-y-5
+}
+::selection {
+  background: var(--selection-background);
 }
 
-:root {
-  --body-color: #444;
+[data-theme="light"] {
+  --body-color: theme('colors.slate.700');
   --body-background-color: theme('colors.pink.100');
   --h1-color: theme('colors.pink.900');
   --h2-color: theme('colors.pink.800');
   --h3-color: theme('colors.pink.500');
   --color-b: theme('colors.slate.800');
-  --color-a: #3273dc;
+  --color-a: theme('colors.blue.600');
   --code-bg: #f2f2f2;
   --blockquote-border: theme('colors.pink.500');
   --table-border: black;
-  --copyright-color: theme('colors.pink.200');
   --copyright-color: theme('colors.pink.300');
+  --hr-background-color: theme('colors.pink.200');
+  --selection-background: theme('colors.pink.300');
 }
 
 [data-theme="dark"] {
   --body-color: theme('colors.slate.400');
   --body-background-color: theme('colors.pink.950');
-  --h1-color: theme('colors.pink.700');
+  --h1-color: theme('colors.pink.400');
   --h2-color: theme('colors.pink.600');
-  --h3-color: theme('colors.pink.400');
+  --h3-color: theme('colors.pink.700');
   --color-b: theme('colors.slate.300');
   --color-a: theme('colors.blue.500');
   --code-bg: #f2f2f2;
   --blockquote-border: theme('colors.pink.700');
   --table-border: white;
   --copyright-color: theme('colors.pink.900');
+  --hr-background-color: theme('colors.pink.900');
+  --selection-background: theme('colors.pink.800');
 }
