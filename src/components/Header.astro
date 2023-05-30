@@ -4,9 +4,9 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-  <div class="flex flex-row items-center pb-1 max-w-full">
-	<h2 class="pr-5"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
-  <div class="flex-1 flex-row">
+  <div class="flex flex-row items-center pb-1 max-w-full space-x-7">
+	<h2 class="shrink"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
+  <div class="grow flex-row">
 	<nav>
 		<HeaderLink href="/okrs">OKRs</HeaderLink>
 		<HeaderLink href="/moments">Moments</HeaderLink>
@@ -14,7 +14,7 @@ import { SITE_TITLE } from '../consts';
 		<HeaderLink href="/gptee">EthanGPT</HeaderLink>
 	</nav>
   </div>
-    <picture id="switcher-picture">
+    <picture id="switcher-picture" class="shrink-0">
     <source id="switcher-source" type="image/svg" srcset="/moon.svg">
     <img id="switcher" style="filter: drop-shadow(1px 1px 1px #999999);" class="w-8 h-8">
     </picture>
@@ -46,26 +46,26 @@ import { SITE_TITLE } from '../consts';
     var switcher = document.getElementById("switcher");
     localStorage.setItem("theme", theme);
 
-  function onSwitcherMouseOver() {
-    var theme = "light";
-    if(localStorage.getItem("theme") == "dark") theme = "dark";
+  function onPointerOver(event) {
+    if(event.pointerType == "mouse" || event.pointerType == "pen") {
+    var theme = localStorage.getItem("theme");
 
     var switcher = document.getElementById("switcher");
     var switcherSource = document.getElementById("switcher-source");
     var animatedSrc = "/moon.webp";
-    if(theme == "dark") animatedSrc = "/sun.webp"
+    if(theme == "dark") animatedSrc = "/sun.webp";
     switcherSource.srcset = animatedSrc;
     switcher.src = animatedSrc;
+    }
   }
 
-  function onSwitcherMouseOut() {
-    var theme = "light";
-    if(localStorage.getItem("theme") == "dark") theme = "dark";
+  function onPointerOut(event) {
+    var theme = localStorage.getItem("theme");
 
     var switcher = document.getElementById("switcher");
-    var animatedSrc = "/moon.svg";
-    if(theme == "dark") animatedSrc = "/sun.svg"
-    switcher.src = animatedSrc;
+    var src = "/moon.svg";
+    if(theme == "dark") src = "/sun.svg";
+    switcher.src = src;
   }
 
   function onClick() {
@@ -78,12 +78,11 @@ import { SITE_TITLE } from '../consts';
     var switcher = document.getElementById("switcher");
     var switcherSource = document.getElementById("switcher-source");
     var src = "/moon.webp";
-    if (switcher.src.endsWith("moon.webp")) {
-      src = "/sun.webp";
-    } else if (switcher.src.endsWith("moon.svg")) {
-      src = "/sun.svg";
-    } else if (switcher.src.endsWith("sun.svg")) {
-      src = "/moon.svg";
+    if (switcher.src.endsWith("webp")) {
+      if(newTheme == "dark") src = "/sun.webp";
+    } else {
+      if (newTheme == "dark") { src = "/sun.svg"; }
+      else { src = "/moon.svg"; }
     }
     switcherSource.srcset = src;
     switcher.src = src;
@@ -92,7 +91,7 @@ import { SITE_TITLE } from '../consts';
     localStorage.setItem("theme", newTheme);
   }
   
-  switcherPicture.addEventListener("mouseover", onSwitcherMouseOver);
-  switcherPicture.addEventListener("mouseout", onSwitcherMouseOut);
+  switcherPicture.addEventListener("pointerover", onPointerOver);
+  switcherPicture.addEventListener("pointerout", onPointerOut);
   switcherPicture.addEventListener("click", onClick);
 </script>
