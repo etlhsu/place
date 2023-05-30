@@ -9,11 +9,13 @@
   src: url('/fonts/Epilogue-Variable.ttf') format('truetype-variations');
 }
 
+html {
+	padding: theme('padding.5');
+}
 body {
 	font-family: "Epilogue", sans-serif;
 	margin: auto;
-	padding: theme('padding.5');
-	max-width: 100ch;
+	max-width: 95ch;
 	text-align: left;
 	background-color: var(--body-background-color);
 	word-wrap: break-word;
