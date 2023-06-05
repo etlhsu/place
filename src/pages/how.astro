@@ -1,8 +1,14 @@
 ---
-import Layout from '../layouts/Moment.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
 ---
-
-<Layout	title="How?">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title="How" description="How can how represent how?" />
+    </head>
+<body>
+  <h1>How</h1>
 	<p>How is the question I always ask myself. How does the world work? How I can be a part of it?
      How can I change the way the world works? How do I matter? How can I come up with more of 
      these questions?
@@ -16,4 +22,5 @@ import Layout from '../layouts/Moment.astro';
 
      And for the question of "how are you doing?" you might ask, I answer: "I'm doing wonderful" 😇
     </p>
-</Layout>
+</body>
+</html>

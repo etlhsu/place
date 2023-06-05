@@ -6,7 +6,7 @@ import { SITE_TITLE } from '../consts';
 <header>
   <div class="flex flex-row items-center pb-1 max-w-full space-x-7">
 	<h2 class="shrink"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
-  <div class="grow flex-row">
+  <div class="flex-row grow">
 	<nav>
 		<HeaderLink href="/okrs">OKRs</HeaderLink>
 		<HeaderLink href="/moments">Moments</HeaderLink>
@@ -35,8 +35,6 @@ import { SITE_TITLE } from '../consts';
       if(window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
     }
 
-    document.documentElement.setAttribute("data-theme", theme);
-
     var switcher = document.getElementById("switcher");
     var switcherPicture = document.getElementById("switcher-picture");
     var graphic = "/moon.svg";
@@ -44,7 +42,6 @@ import { SITE_TITLE } from '../consts';
     switcher.src = graphic;
 
     var switcher = document.getElementById("switcher");
-    localStorage.setItem("theme", theme);
 
   function onPointerOver(event) {
     if(event.pointerType == "mouse" || event.pointerType == "pen") {
