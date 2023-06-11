@@ -25,8 +25,8 @@ people I collaborated with wanted me to be creative, free-thinking, and curious.
 realized this, I was the opposite of all three. In fact, I was incredibly creative in how I 
 limited my creativity, free-thinking in terms of how much I could restrict myself, and curious what 
 it would be like if I wasn't curious at all. The cost of survival in a productive society is being
-creative, or else you will crowded out by forward thinkers who are rewarded more for contributing 
-more to sciety. I feel like I am being crowded out as I depend a lot more on others since I 
+creative, or else you will be crowded out by forward thinkers who are rewarded more for contributing 
+more to society. I feel like I am being crowded out as I depend a lot more on others when I
 struggle to care about my own thoughts:
 
 > "Why propose your own approach when someone with more experience will have a better approach?" 
@@ -38,7 +38,7 @@ myself because I outsource so many of my thoughts to others who I value for thei
 how the world should be. Social media is not bad for your health, but you certainly can make it be. 
 All you have do to is follow expressive people who you care about more than you care about yourself. 
 Eventually you'll always be sitting on the sidelines, cheering on others but never self-starting, 
-like I am.
+like I was.
 
 ...
 
@@ -49,7 +49,7 @@ the world in any way, and then forget it. As asserted above, I throw most of my 
 I think other people are better positioned to pursue them. My thoughts are as disposable as my email.
 
 I find it funny that meditation focuses on "clearing your mind." At least for me, my
-baseline of stress (for optimal wellbeing) is extremely high. Clearing my mind also clears my
+baseline of stress (for optimal well-being) is extremely high. Clearing my mind also clears my
 personality. So constantly convincing myself to sit on the sidelines has nearly erased my soul. I'm
 really transparent about it too. I tell people that I do nothing on the weekends and have zero hobbies.
 Could you really shove more red flags into a single person?
@@ -80,14 +80,14 @@ thing you choose to fill all of your random time can evolve and grow into someth
 of. It turned out that I used this exact tactic to begin my story of getting a job, it's just that I 
 chose to focus on a singular thing that I ended up not being fully proud of (not what I was working
 on, but how I worked) and never evolved beyond it. I also was too quick to spread myself thin
-spending my time in unfulfilling ways. So when I struggled to value myself, I had nothing to focus
-on that could still cultivate my passion. During these times, I keep deferring to people with lots 
-to look forward to, but what if I gave myself something to look forward to as well?
+spending my time in unfulfilling ways which gave me nothing to focus on that could still cultivate 
+my passion. During these times, I keep deferring to people with lots to look forward to, but what 
+if I gave myself something to look forward to as well?
 
 ...
 
 In retrospect, it seems so obvious that I would conclude to "giving up" if I compare my small ideas
-to massively developed ideas of others. But if anything, the largest trees are the biggest reminders
+to the massively developed ideas of others. But if anything, the largest trees are the biggest reminders
 of why we all should be planning the seeds that keep the forest growing. And if your lucky, those 
 trees might already have a seed for you to start planting ;)
 
