@@ -15,7 +15,7 @@ In the pursuit of it, I forgot who I was.
 _But why would I aspire to only that?_
 
 The answer: the returns were extremely addicting. It doesn't take much to impress a child who had 
-never earned a dollar, never had real responsibility, and truthfully... never had friends. All I 
+never earned a dollar, never had real responsibility, and truthfully... never was social. All I 
 needed to be happy was a stable income, some work that matters, and to be around awesome people. So when
 I was given all of that and more through the work I did, I was high on life. The problem? I wasn't prosperous
 all the sudden, instead I was simply given a free trial of prosperity. 
