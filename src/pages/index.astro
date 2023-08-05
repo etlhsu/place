@@ -1,59 +1,103 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body style="margin: 0; max-width: 100%">
-  <div class="xl:flex flex-wrap xl:space-x-7 max-xl:space-y-5 max-w-full">
-    <div class='xl:flex-col flex items-center flex-1 max-xl:overflow-x-auto xl:max-w-lg'>
-    <div class="rotate-6 mt-8 mb-8 max-xl:ml-1 max-xl:mr-5">
-    <iframe class="border-2 border-red-400" width="250" height="140" src="/how?how=how#how" title="Ethan's Recursive Place"></iframe>
-    <p class="xl:hidden pt-3 pl-3 text-pink-500">Scroll to the right for more ➡️</p>
-    </div>
-    <iframe class="-rotate-12 mt-6 mb-8 max-xl:ml-5 max-xl:mr-10" width="250" height="140" src="https://www.youtube-nocookie.com/embed/SCbmAVMMRek?start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="flex-col rotate-12 mt-8 mb-10 max-xl:ml-1 max-xl:mr-5" style="border-radius:20px"; src="https://open.spotify.com/embed/track/2lDCoIwerxGWTBECyfF4cI?utm_source=generator" width="250" height="80" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-  <div class="flex-col">
-   <div class="flex-1"/>
-		<main class="flex-col space-y-5" style='max-width: 95ch'>
-		<Header/>
-      <p> Hi, I'm glad you made it here! Here we go... </p>
-
-      <p> I'm a lifelong technologist who lives for the thrill of exploring the world in ways that 
-          are so crazy that I'm not even allowed to tell you what happened sometimes. I spent all of my time
-          in high-school plotting the perfect way to get a tech job. Not an internship, not a co-opp,
-          an actual full-time job. I spent months talking to all kinds of folks, from startups looking for their
-          1st engineer to enterprises looking for their 50,000th. A handful of fruitful conversations
-          later, I was an actual impostor, well beyond any kind of impostor syndrome. While I 
-          was surprised by the way things unfolded, I was most surprised by all the help I received.
-      </p>
-
-      <h3 class="pt-6">The Now<a style="color: var(--h3-color)" href="/how?how=how#how">?</a></h3>
-        <p> Say hi to me <a href="https://twitter.com/messages/compose?recipient_id=977005701078818816">here on Twitter</a>
-            or <a href="mailto:ethanhsuhsu@gmail.com">here via email</a>. I like meeting new folks because
-            I have so much to learn from everyone. I'm not a VC but I appreciate pitches of all kinds :)
-
-      <p>
-          During the craziness, I wrote a book about my adventures, but it has been an eternal first draft.
-          <a href="https://chng.it/dm5cnZPdqC" target="_blank">Punch me</a> if you want to find out
-          how I escaped my self-imposed shenanigans. <p>
-
-          <p> I'm trying to make the world a fun place by building the
-          <a href="https://harrypotter.fandom.com/wiki/Weasleys%27_Wizard_Wheezes" target="_blank">Weasley</a> of
-          SaaS. I have a lot of ideas to try out so we'll see where they take me...
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body style="margin: 0; max-width: 100%">
+    <div class="xl:flex flex-wrap xl:space-x-7 max-xl:space-y-5 max-w-full">
+      <div
+        class="xl:flex-col flex items-center flex-1 max-xl:overflow-x-auto xl:max-w-lg"
+      >
+        <div class="rotate-6 mt-8 mb-8 max-xl:ml-1 max-xl:mr-5">
+          <iframe
+            class="border-2 border-red-400"
+            width="250"
+            height="140"
+            src="/how?how=how#how"
+            title="Ethan's Recursive Place"></iframe>
+          <p class="xl:hidden pt-3 pl-3 text-pink-500">
+            Scroll to the right for more ➡️
           </p>
-      </p>
-		</main>
-		<Footer />
-  </div>
-    <div class='flex-1'/>
+        </div>
+        <iframe
+          class="-rotate-12 mt-6 mb-8 max-xl:ml-5 max-xl:mr-10"
+          width="250"
+          height="140"
+          src="https://www.youtube-nocookie.com/embed/SCbmAVMMRek?start=17"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <iframe
+          class="flex-col rotate-12 mt-8 mb-10 max-xl:ml-1 max-xl:mr-5"
+          style="border-radius:20px"
+          ;
+          src="https://open.spotify.com/embed/track/2lDCoIwerxGWTBECyfF4cI?utm_source=generator"
+          width="250"
+          height="80"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+      </div>
+      <div class="flex-col">
+        <div class="flex-1"></div>
+        <main class="flex-col space-y-5" style="max-width: 95ch">
+          <Header />
+          <p>Hi, I'm glad you made it here! Here we go...</p>
+
+          <p>
+            I'm a lifelong technologist who lives for the thrill of exploring
+            the world in ways that are so crazy that I'm not even allowed to
+            tell you what happened sometimes. I spent all of my time in
+            high-school plotting the perfect way to get a tech job. Not an
+            internship, not a co-opp, an actual full-time job. I spent months
+            talking to all kinds of folks, from startups looking for their 1st
+            engineer to enterprises looking for their 50,000th. A handful of
+            fruitful conversations later, I was an actual impostor, well beyond
+            any kind of impostor syndrome. While I was surprised by the way
+            things unfolded, I was most surprised by all the help I received.
+          </p>
+
+          <h3 class="pt-6">
+            The Now<a style="color: var(--h3-color)" href="/how?how=how#how"
+              >?</a
+            >
+          </h3>
+          <p>
+            Say hi to me <a
+              href="https://twitter.com/messages/compose?recipient_id=977005701078818816"
+              >here on Twitter</a
+            >
+            or <a href="mailto:ethanhsuhsu@gmail.com">here via email</a>. I like
+            meeting new folks because I have so much to learn from everyone. I'm
+            not a VC but I appreciate pitches of all kinds :)
+
+            <p>
+              During the craziness, I wrote a book about my adventures, but it
+              has been an eternal first draft.
+              <a href="https://chng.it/dm5cnZPdqC" target="_blank">Punch me</a> if
+              you want to find out how I escaped my self-imposed shenanigans.
+            </p>
+            <p>
+              I'm trying to make the world a fun place by building the
+              <a
+                href="https://harrypotter.fandom.com/wiki/Weasleys%27_Wizard_Wheezes"
+                target="_blank">Weasley</a
+              > of SaaS. I have a lot of ideas to try out so we'll see where they
+              take me...
+            </p>
+          </p>
+        </main>
+        <Footer />
+      </div>
+      <div class="flex-1"></div>
     </div>
-	</body>
+  </body>
 </html>
