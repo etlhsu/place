@@ -4,6 +4,12 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
+
+  <link rel="preload" href="/sun.webp" as="image" />
+  <link rel="preload" href="/moon.webp" as="image" />
+  <link rel="preload" href="/sun.svg" as="image" />
+  <link rel="preload" href="/moon.svg" as="image" />
+
   <div class="flex flex-row items-center pb-1 max-w-full space-x-7">
 	<h2 class="shrink"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
   <div class="flex-row grow">
@@ -36,8 +42,8 @@ import { SITE_TITLE } from '../consts';
 
     var switcher = document.getElementById("switcher");
     var switcherPicture = document.getElementById("switcher-picture");
-    var graphic = "/moon.svg";
-    if(theme == "dark") graphic = "/sun.svg";
+    var graphic = "/sun.svg";
+    if(theme == "dark") graphic = "/moon.svg";
     switcher.src = graphic;
 
     var switcher = document.getElementById("switcher");
@@ -48,8 +54,8 @@ import { SITE_TITLE } from '../consts';
 
     var switcher = document.getElementById("switcher");
     var switcherSource = document.getElementById("switcher-source");
-    var animatedSrc = "/moon.webp";
-    if(theme == "dark") animatedSrc = "/sun.webp";
+    var animatedSrc = "/sun.webp";
+    if(theme == "dark") animatedSrc = "/moon.webp";
     switcherSource.srcset = animatedSrc;
     switcher.src = animatedSrc;
     }
@@ -59,8 +65,8 @@ import { SITE_TITLE } from '../consts';
     var theme = localStorage.getItem("theme");
 
     var switcher = document.getElementById("switcher");
-    var src = "/moon.svg";
-    if(theme == "dark") src = "/sun.svg";
+    var src = "/sun.svg";
+    if(theme == "dark") src = "/moon.svg";
     switcher.src = src;
   }
 
@@ -73,11 +79,13 @@ import { SITE_TITLE } from '../consts';
 
     var switcher = document.getElementById("switcher");
     var switcherSource = document.getElementById("switcher-source");
-    var src = "/moon.webp";
+    var src = "/sun.webp";
     if (switcher.src.endsWith("webp")) {
-      if(newTheme == "dark") src = "/sun.webp";
+      if(newTheme == "dark") src = "/moon.webp";
+      if (newTheme == "light") { src = "/sun.webp"; }
+      else { src = "/moon.webp"; }
     } else {
-      if (newTheme == "dark") { src = "/sun.svg"; }
+      if (newTheme == "light") { src = "/sun.svg"; }
       else { src = "/moon.svg"; }
     }
     switcherSource.srcset = src;
