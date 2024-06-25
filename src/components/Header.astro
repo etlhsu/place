@@ -10,22 +10,27 @@ import { SITE_TITLE } from '../consts';
   <link rel="preload" href="/sun.svg" as="image" />
   <link rel="preload" href="/moon.svg" as="image" />
 
-  <div class="flex flex-row items-center pb-1 max-w-full space-x-7">
-	<h2 class="shrink"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
-  <div class="flex-row grow">
-	<nav>
-		<HeaderLink href="/moments">Moments</HeaderLink>
-    <HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="/resources">Resources</HeaderLink>
-		<b><HeaderLink href="https://funhouse.ethsu.io">*Fun House Shop*</HeaderLink></b>
-	</nav>
-  </div>
-    <picture id="switcher-picture" class="shrink-0">
+  <div class="flex flex-row items-center pb-1 space-x-7">
+    <h2 class="shrink"> <a style="color: var(--h2-color)" href="/"> {SITE_TITLE} </a></h2>
+      <nav class="flex flex-nowrap">
+          <HeaderLink href="/moments">Moments</HeaderLink>
+          <HeaderLink href="/about">About</HeaderLink>
+          <b><HeaderLink href="https://funhouse.ethsu.io">*Fun House Shop*</HeaderLink></b>	
+      </nav>
+      <div class="flex flex-col items-center w-44">
+        <p id="countdown" class="min-w-fit">99y 9m 9d 9h 99m 9s</p>
+        <i><p class="text-xs w-fit" style="color: var(--countdown-color)">I will die
+        eventually</p></i>
+      </div>
+
+      <div class="grow"></div>
+  <picture id="switcher-picture" class="shrink-0">
     <source id="switcher-source" type="image/svg" srcset="/moon.svg">
     <img id="switcher" style="filter: drop-shadow(1px 1px 1px #999999);" class="w-8 h-8">
-    </picture>
+  </picture>
   </div>
 </header>
+
 <style>
 	header {
 		margin: 0em 0 2em;
@@ -99,4 +104,42 @@ import { SITE_TITLE } from '../consts';
   switcherPicture.addEventListener("pointerover", onPointerOver);
   switcherPicture.addEventListener("pointerout", onPointerOut);
   switcherPicture.addEventListener("click", onClick);
+</script>
+<script is:inline>
+// Set the date we're counting down to
+var countDownDate = new Date("2090-09-09T09:09").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+
+  // Time calculations for days, hours, minutes and seconds
+  var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+  var remainingTime = distance % (1000 * 60 * 60 * 24 * 365);
+  var months = Math.floor(remainingTime / (1000 * 60 * 60 * 24 * 30));
+  remainingTime = remainingTime % (1000 * 60 * 60 * 24 * 30);
+  var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+  remainingTime = remainingTime % (1000 * 60 * 60 * 24);
+  var hours = Math.floor(remainingTime / (1000 * 60 * 60));
+  remainingTime = remainingTime % (1000 * 60 * 60);
+  var minutes = Math.floor(remainingTime / (1000 * 60));
+  remainingTime = remainingTime % (1000 * 60);
+  var seconds = Math.floor(remainingTime / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = 
+    years + "y " + months + "m " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 </script>

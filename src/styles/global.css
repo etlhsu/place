@@ -123,6 +123,7 @@ article {
   --blockquote-border: theme('colors.pink.500');
   --table-border: black;
   --copyright-color: theme('colors.pink.300');
+  --countdown-color: theme('colors.pink.500');
   --hr-background-color: theme('colors.pink.200');
   --selection-background: theme('colors.pink.300');
 }
@@ -139,6 +140,7 @@ article {
   --blockquote-border: theme('colors.pink.700');
   --table-border: white;
   --copyright-color: theme('colors.pink.900');
+  --countdown-color: theme('colors.pink.700');
   --hr-background-color: theme('colors.pink.900');
   --selection-background: theme('colors.pink.800');
 }
