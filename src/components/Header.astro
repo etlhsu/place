@@ -17,8 +17,8 @@ import { SITE_TITLE } from '../consts';
           <HeaderLink href="/about">About</HeaderLink>
           <b><HeaderLink href="https://funhouse.ethsu.io">*Fun House Shop*</HeaderLink></b>	
       </nav>
-      <div class="flex flex-col items-center w-44">
-        <p id="countdown" class="min-w-fit">99y 9m 9d 9h 99m 9s</p>
+      <div class="flex flex-col items-center w-48">
+        <p id="countdown" class="min-w-fit text-nowrap">99y 9m 99d 9h 99m 99s</p>
         <i><p class="text-xs w-fit" style="color: var(--countdown-color)">I will die
         eventually</p></i>
       </div>
@@ -132,14 +132,7 @@ var x = setInterval(function() {
   remainingTime = remainingTime % (1000 * 60);
   var seconds = Math.floor(remainingTime / 1000);
 
-  // Display the result in the element with id="demo"
   document.getElementById("countdown").innerHTML = 
     years + "y " + months + "m " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
 }, 1000);
 </script>
