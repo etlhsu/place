@@ -111,36 +111,43 @@ article {
   background: var(--selection-background);
 }
 
+.recursive-box {
+  border-width: 2px;
+  border-color: var(--recursive-border-color);
+}
+
 [data-theme="light"] {
-  --body-color: theme('colors.slate.700');
-  --body-background-color: theme('colors.pink.100');
-  --h1-color: theme('colors.pink.900');
-  --h2-color: theme('colors.pink.800');
-  --h3-color: theme('colors.pink.500');
+  --body-color: theme('colors.slate.800');
+  --body-background-color: theme('colors.red.500');
+  --h1-color: theme('colors.red.950');
+  --h2-color: theme('colors.red.900');
+  --h3-color: theme('colors.red.900');
   --color-b: theme('colors.slate.800');
-  --color-a: theme('colors.blue.600');
+  --color-a: theme('colors.red.800');
   --code-bg: #f2f2f2;
-  --blockquote-border: theme('colors.pink.500');
+  --blockquote-border: theme('colors.red.500');
   --table-border: black;
-  --copyright-color: theme('colors.pink.300');
-  --countdown-color: theme('colors.pink.500');
-  --hr-background-color: theme('colors.pink.200');
-  --selection-background: theme('colors.pink.300');
+  --copyright-color: theme('colors.red.700');
+  --countdown-color: theme('colors.red.800');
+  --hr-background-color: theme('colors.red.900');
+  --selection-background: theme('colors.red.600');
+  --recursive-border-color: theme('colors.red.700');
 }
 
 [data-theme="dark"] {
   --body-color: theme('colors.slate.400');
-  --body-background-color: theme('colors.pink.950');
-  --h1-color: theme('colors.pink.400');
-  --h2-color: theme('colors.pink.600');
-  --h3-color: theme('colors.pink.700');
+  --body-background-color: theme('colors.red.950');
+  --h1-color: theme('colors.red.200');
+  --h2-color: theme('colors.red.600');
+  --h3-color: theme('colors.red.700');
   --color-b: theme('colors.slate.400');
-  --color-a: theme('colors.blue.500');
+  --color-a: theme('colors.red.400');
   --code-bg: #f2f2f2;
-  --blockquote-border: theme('colors.pink.700');
+  --blockquote-border: theme('colors.red.700');
   --table-border: white;
-  --copyright-color: theme('colors.pink.900');
-  --countdown-color: theme('colors.pink.700');
-  --hr-background-color: theme('colors.pink.900');
-  --selection-background: theme('colors.pink.800');
+  --copyright-color: theme('colors.red.900');
+  --countdown-color: theme('colors.red.700');
+  --hr-background-color: theme('colors.red.900');
+  --selection-background: theme('colors.red.800');
+  --recursive-border-color: theme('colors.red.800');
 }
