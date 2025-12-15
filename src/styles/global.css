@@ -118,7 +118,7 @@ article {
 
 [data-theme="light"] {
   --body-color: theme('colors.slate.800');
-  --body-background-color: theme('colors.red.500');
+  --body-background-color: theme('colors.red.50');
   --h1-color: theme('colors.red.950');
   --h2-color: theme('colors.red.900');
   --h3-color: theme('colors.red.900');
@@ -130,7 +130,7 @@ article {
   --copyright-color: theme('colors.red.700');
   --countdown-color: theme('colors.red.800');
   --hr-background-color: theme('colors.red.900');
-  --selection-background: theme('colors.red.600');
+  --selection-background: theme('colors.red.300');
   --recursive-border-color: theme('colors.red.700');
 }
 
@@ -148,6 +148,6 @@ article {
   --copyright-color: theme('colors.red.900');
   --countdown-color: theme('colors.red.700');
   --hr-background-color: theme('colors.red.900');
-  --selection-background: theme('colors.red.800');
+  --selection-background: theme('colors.red.900');
   --recursive-border-color: theme('colors.red.800');
 }
